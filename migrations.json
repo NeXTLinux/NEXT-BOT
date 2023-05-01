@@ -1,0 +1,188 @@
+{
+  "migrations": [
+    {
+      "cli": "nx",
+      "version": "14.1.9-beta.0",
+      "description": "Adds @swc/core and @swc-node as a dev dep if you are using them",
+      "factory": "./src/migrations/update-14-1-9/add-swc-deps-if-needed",
+      "package": "@nx/linter",
+      "name": "add-swc-deps"
+    },
+    {
+      "cli": "nx",
+      "version": "14.2.3-beta.0",
+      "description": "Adds @swc/core and @swc-node as a dev dep if you are using them (repeated due to prior mistake)",
+      "factory": "./src/migrations/update-14-1-9/add-swc-deps-if-needed",
+      "package": "@nx/linter",
+      "name": "add-swc-deps-again"
+    },
+    {
+      "cli": "nx",
+      "version": "14.4.4",
+      "description": "Adds @typescript-eslint/utils as a dev dep",
+      "factory": "./src/migrations/update-14-4-4/experimental-to-utils-deps",
+      "package": "@nx/linter",
+      "name": "experimental-to-utils-deps"
+    },
+    {
+      "cli": "nx",
+      "version": "14.4.4",
+      "description": "Switch from  @typescript-eslint/experimental-utils to @typescript-eslint/utils in all rules and rules.spec files",
+      "factory": "./src/migrations/update-14-4-4/experimental-to-utils-rules",
+      "package": "@nx/linter",
+      "name": "experimental-to-utils-rules"
+    },
+    {
+      "cli": "nx",
+      "version": "15.0.0-beta.0",
+      "description": "Stop hashing eslint config files for build targets and dependent tasks",
+      "factory": "./src/migrations/update-15-0-0/add-eslint-inputs",
+      "package": "@nx/linter",
+      "name": "add-eslint-inputs"
+    },
+    {
+      "cli": "nx",
+      "version": "15.7.1-beta.0",
+      "description": "Add node_modules to root eslint ignore",
+      "factory": "./src/migrations/update-15-7-1/add-eslint-ignore",
+      "package": "@nx/linter",
+      "name": "add-eslint-ignore"
+    },
+    {
+      "cli": "nx",
+      "version": "16.0.0-beta.1",
+      "description": "Replace @nx/linter with @nx/linter",
+      "implementation": "./src/migrations/update-16-0-0-add-nx-packages/update-16-0-0-add-nx-packages",
+      "package": "@nx/linter",
+      "name": "update-16-0-0-add-nx-packages"
+    },
+    {
+      "cli": "nx",
+      "version": "14.6.1-beta.0",
+      "description": "Change Cypress e2e and component testing presets to use __filename instead of __dirname and include a devServerTarget for component testing.",
+      "factory": "./src/migrations/update-14-6-1/update-cypress-configs-presets",
+      "package": "@nx/cypress",
+      "name": "update-cypress-configs-preset"
+    },
+    {
+      "cli": "nx",
+      "version": "14.7.0-beta.0",
+      "description": "Update Cypress if using v10 to support latest component testing features",
+      "factory": "./src/migrations/update-14-7-0/update-cypress-version-if-10",
+      "package": "@nx/cypress",
+      "name": "update-cypress-if-v10"
+    },
+    {
+      "cli": "nx",
+      "version": "15.0.0-beta.0",
+      "description": "Stop hashing cypress spec files and config files for build targets and dependent tasks",
+      "factory": "./src/migrations/update-15-0-0/add-cypress-inputs",
+      "package": "@nx/cypress",
+      "name": "add-cypress-inputs"
+    },
+    {
+      "cli": "nx",
+      "version": "15.0.0-beta.4",
+      "description": "Update to using cy.mount in the commands.ts file instead of importing mount for each component test file",
+      "factory": "./src/migrations/update-15-0-0/update-cy-mount-usage",
+      "package": "@nx/cypress",
+      "name": "update-cy-mount-usage"
+    },
+    {
+      "cli": "nx",
+      "version": "15.1.0-beta.0",
+      "description": "Update to Cypress v11. This migration will only update if the workspace is already on v10. https://www.cypress.io/blog/2022/11/04/upcoming-changes-to-component-testing/",
+      "factory": "./src/migrations/update-15-1-0/cypress-11",
+      "package": "@nx/cypress",
+      "name": "update-to-cypress-11"
+    },
+    {
+      "cli": "nx",
+      "version": "15.5.0-beta.0",
+      "description": "Update to Cypress v12. Cypress 12 contains a handful of breaking changes that might causes tests to start failing that nx cannot directly fix. Read more Cypress 12 changes: https://docs.cypress.io/guides/references/migration-guide#Migrating-to-Cypress-12-0.This migration will only run if you are already using Cypress v11.",
+      "factory": "./src/migrations/update-15-5-0/update-to-cypress-12",
+      "package": "@nx/cypress",
+      "name": "update-to-cypress-12"
+    },
+    {
+      "cli": "nx",
+      "version": "16.0.0-beta.1",
+      "description": "Replace @nx/cypress with @nx/cypress",
+      "implementation": "./src/migrations/update-16-0-0-add-nx-packages/update-16-0-0-add-nx-packages",
+      "package": "@nx/cypress",
+      "name": "update-16-0-0-add-nx-packages"
+    },
+    {
+      "version": "14.0.0-beta.2",
+      "cli": "nx",
+      "description": "Update move jest config files to .ts files.",
+      "factory": "./src/migrations/update-14-0-0/update-jest-config-ext",
+      "package": "@nx/jest",
+      "name": "update-jest-config-extensions"
+    },
+    {
+      "version": "14.1.5-beta.0",
+      "cli": "nx",
+      "description": "Update to export default in jest config and revert jest.preset.ts to jest.preset.js",
+      "factory": "./src/migrations/update-14-1-5/update-exports-jest-config",
+      "package": "@nx/jest",
+      "name": "update-to-export-default"
+    },
+    {
+      "version": "14.5.5-beta.0",
+      "cli": "nx",
+      "description": "Exclude jest.config.ts from tsconfig where missing.",
+      "factory": "./src/migrations/update-14-0-0/update-jest-config-ext",
+      "package": "@nx/jest",
+      "name": "exclude-jest-config-from-ts-config"
+    },
+    {
+      "version": "14.6.0-beta.0",
+      "cli": "nx",
+      "description": "Update jest configs to support jest 28 changes (https://jestjs.io/docs/upgrading-to-jest28#configuration-options)",
+      "factory": "./src/migrations/update-14-6-0/update-configs-jest-28",
+      "package": "@nx/jest",
+      "name": "update-configs-jest-28"
+    },
+    {
+      "version": "14.6.0-beta.0",
+      "cli": "nx",
+      "description": "Update jest test files to support jest 28 changes (https://jestjs.io/docs/upgrading-to-jest28)",
+      "factory": "./src/migrations/update-14-6-0/update-tests-jest-28",
+      "package": "@nx/jest",
+      "name": "update-tests-jest-28"
+    },
+    {
+      "version": "15.0.0-beta.0",
+      "cli": "nx",
+      "description": "Stop hashing jest spec files and config files for build targets and dependent tasks",
+      "factory": "./src/migrations/update-15-0-0/add-jest-inputs",
+      "package": "@nx/jest",
+      "name": "add-jest-inputs"
+    },
+    {
+      "version": "15.8.0-beta.0",
+      "cli": "nx",
+      "description": "Update jest configs to support jest 29 changes (https://jestjs.io/docs/upgrading-to-jest29)",
+      "factory": "./src/migrations/update-15-8-0/update-configs-jest-29",
+      "package": "@nx/jest",
+      "name": "update-configs-jest-29"
+    },
+    {
+      "version": "15.8.0-beta.0",
+      "cli": "nx",
+      "description": "Update jest test files to support jest 29 changes (https://jestjs.io/docs/upgrading-to-jest29)",
+      "factory": "./src/migrations/update-15-8-0/update-tests-jest-29",
+      "package": "@nx/jest",
+      "name": "update-tests-jest-29"
+    },
+    {
+      "cli": "nx",
+      "version": "16.0.0-beta.1",
+      "description": "Replace @nx/jest with @nx/jest",
+      "implementation": "./src/migrations/update-16-0-0-add-nx-packages/update-16-0-0-add-nx-packages",
+      "package": "@nx/jest",
+      "name": "update-16-0-0-add-nx-packages"
+    }
+  ]
+}
