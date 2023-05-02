@@ -15,7 +15,8 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "paths": {
-      "@next-bot/pull": ["apps/pull/src/index.ts"]
+      "@next-bot/pull": ["apps/pull/src/index.ts"],
+      "@next-bot/reminders": ["apps/reminders/src/index.ts"]
     }
   },
   "files": [],
