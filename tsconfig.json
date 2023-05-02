@@ -13,7 +13,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "paths": {
+      "@next-bot/pull": ["apps/pull/src/index.ts"]
+    }
   },
   "files": [],
   "include": [],
