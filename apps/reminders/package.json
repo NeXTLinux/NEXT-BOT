@@ -4,7 +4,7 @@
   "scripts": {
     "start": "next-bot run ./index.js",
     "test": "jest && standard",
-    "test:debug": "node --inspect=9229 node_modules/.bin/jest --runInBand"
+    "test:debug": "node --inspect=9229 ../../node_modules/.bin/jest --runInBand"
   },
   "jest": {
     "verbose": true,
