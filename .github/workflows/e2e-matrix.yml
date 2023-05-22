@@ -445,7 +445,7 @@ jobs:
 
       - name: Setup tmate session
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled && failure() }}
-        uses: mxschmitt/action-tmate@v3.14
+        uses: mxschmitt/action-tmate@v3.16
         timeout-minutes: 15
 
   process-result:
